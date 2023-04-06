@@ -109,12 +109,12 @@
                             temp_html = `<li>
                                             <h2>✅ ${bucket}</h2>
                                             <button onclick="done_bucket(${num})" type="button" class="btn btn-outline-primary">Done</button>
-                                            <button onclick="Delete_bucket(${num})"type="button" class="btn btn-outline-danger">Delete</button>
+                                            <button onclick="delete_bucket(${num})"type="button" class="btn btn-outline-danger">Delete</button>
                                         </li>`
                         } else {
                             temp_html = `<li>
                                             <h2 class="done">✅ ${bucket}</h2>
-                                            <button onclick="Delete_bucket(${num})"type="button" class="btn btn-outline-danger">Delete</button>
+                                            <button onclick="delete_bucket(${num})"type="button" class="btn btn-outline-danger">Delete</button>
                                         </li>`
                         }
                         $('#bucket-list').append(temp_html)
@@ -174,17 +174,17 @@
     <div class="mybox" id="bucket-list">
         <li>
             <h2>✅ Bucket list number 1</h2>
-            <button onclick="Delete_bucket(1)"type="button" class="btn btn-outline-danger">Delete</button>
+            <button onclick="delete_bucket(1)"type="button" class="btn btn-outline-danger">Delete</button>
             <button onclick="done_bucket(5)" type="button" class="btn btn-outline-primary">Done!</button>
         </li>
         <li>
             <h2>✅ Bucket list number 2</h2>
-            <button onclick="Delete_bucket(1)"type="button" class="btn btn-outline-danger">Delete</button>
+            <button onclick="delete_bucket(1)"type="button" class="btn btn-outline-danger">Delete</button>
             <button onclick="done_bucket(5)" type="button" class="btn btn-outline-primary">Done!</button>
         </li>
         <li>
             <h2>✅ Bucket list number 3</h2>
-            <button onclick="Delete_bucket(1)"type="button" class="btn btn-outline-danger">Delete</button>
+            <button onclick="delete_bucket(1)"type="button" class="btn btn-outline-danger">Delete</button>
             <button onclick="done_bucket(5)" type="button" class="btn btn-outline-primary">Done!</button>
         </li>
     </div>
